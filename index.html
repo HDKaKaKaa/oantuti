@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Rock, Paper, Scissors</title>
+
+
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+  <div class="game-container">
+    <div class="header">
+        <img src="images/logo.svg" alt="Rock Paper Scissors Logo" class="logo">
+        <div class="score-box">
+            <span>SCORE</span>
+            <p id="score">0</p>
+        </div>
+    </div>
+    <div class="game">
+        <div class="triangle-container">
+            <img src="images/bg-triangle.svg" alt="Triangle Background" class="triangle">
+            <button class="choice rock" id="rock">
+                <img src="images/icon-rock.svg" alt="Rock">
+            </button>
+            <button class="choice paper" id="paper">
+                <img src="images/icon-paper.svg" alt="Paper">
+            </button>
+            <button class="choice scissors" id="scissors">
+                <img src="images/icon-scissors.svg" alt="Scissors">
+            </button>
+        </div>
+        <div class="result" id="result" style="display: none;">
+            <div class="picked">
+                <div>
+                    <span>YOU PICKED</span>
+                    <div id="user-choice" class="choice-display"></div>
+                </div>
+                <div>
+                    <span>THE HOUSE PICKED</span>
+                    <div id="computer-choice" class="choice-display"></div>
+                </div>
+            </div>
+            <h2 id="winner"></h2>
+            <button id="continue">CONTINUE</button>
+        </div>
+    </div>
+  </div>
+
+  <button id="rules-btn">RULES</button>
+  <div id="rules-modal">
+      <div class="rules-content">
+          <img src="images/image-rules.svg" alt="Game Rules">
+          <button id="close-rules">X</button>
+      </div>
+  </div>
+
+<script src="script.js"></script>
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>
